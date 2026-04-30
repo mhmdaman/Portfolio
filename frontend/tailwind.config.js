@@ -5,6 +5,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Outfit', 'sans-serif'],
+        mono: ['Outfit', 'monospace'],
+      },
       borderColor: {
         border: "hsl(var(--border))",
       },
