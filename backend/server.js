@@ -9,13 +9,18 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Set up Nodemailer transporter
-// NOTE: For this to work with Gmail, you need an "App Password"
+// Set up Nodemailer transporter using a hardcoded IPv4 address
+// This is the ultimate fix for Render's IPv6 ENETUNREACH bug
 const transporter = nodemailer.createTransport({
-    service: 'gmail',
+    host: '192.178.211.108', // Hardcoded IPv4 for smtp.gmail.com
+    port: 465,
+    secure: true,
     auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS
+    },
+    tls: {
+        servername: 'smtp.gmail.com' // Required for the TLS certificate
     }
 });
 
