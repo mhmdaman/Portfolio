@@ -24,7 +24,7 @@ const Projects = () => {
 
         <div className="border-t border-neutral-900">
           {projects.map((p) => (
-            <a key={p.id} href={p.href} className="project-card group block border-b border-neutral-900 py-8 md:py-10 hover:bg-white hover:text-black">
+            <a key={p.id} href={p.href} target="_blank" rel="noopener noreferrer" className="project-card group block border-b border-neutral-900 py-8 md:py-10 hover:bg-white hover:text-black">
               <div className="max-w-7xl mx-auto grid grid-cols-12 gap-4 px-2 items-start">
                 <div className="col-span-12 md:col-span-1 font-mono-alt text-xs text-neutral-600 group-hover:text-neutral-400 pt-2">{p.accent}</div>
                 <div className="col-span-12 md:col-span-5">

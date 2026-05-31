@@ -48,53 +48,61 @@ export const projects = [
   {
     id: "p1", title: "Stardust", year: "2026", category: "Interactive Graphics",
     description: "Gesture-controlled interactive particle system hosted on GitHub Pages, utilizing hand tracking for an immersive experience.",
-    tech: ["Three.js", "MediaPipe Hands", "JavaScript"], href: "#", accent: "01"
+    tech: ["Three.js", "MediaPipe Hands", "JavaScript"], href: "https://github.com/mhmdaman/stardust", accent: "01"
   },
   {
-    id: "p2", title: "Microservices API Gateway", year: "2026", category: "Infrastructure",
+    id: "p2", title: "Grumpy Duck", year: "2026", category: "Application interface Gateway",
+
     description: "Locally hosted API gateway featuring full observability through integrated metrics dashboards and performance monitoring.",
-    tech: ["Docker Compose", "Prometheus", "Grafana"], href: "#", accent: "02"
+    tech: ["Docker Compose", "Prometheus", "Grafana"], href: "https://github.com/mhmdaman/grumpyduck", accent: "02"
   },
   {
     id: "p3", title: "MediCore", year: "2026", category: "HealthTech",
     description: "A comprehensive hospital patient record system with a secure relational schema and a modern web interface.",
-    tech: ["Flask", "MySQL", "Vanilla JS"], href: "#", accent: "03"
+    tech: ["Flask", "MySQL", "Vanilla JS"], href: "https://github.com/mhmdaman/medicore", accent: "03"
   },
   {
     id: "p4", title: "CaféCore", year: "2026", category: "Management System",
     description: "A streamlined canteen management system featuring custom theming, detailed ER diagrams, and robust operation logic.",
-    tech: ["Flask", "MySQL", "CSS"], href: "#", accent: "04"
+    tech: ["Flask", "MySQL", "CSS"], href: "", accent: "04"
   },
   {
     id: "p5", title: "Intrusion Detection System (IDS)", year: "2026", category: "Security / ML",
     description: "Network intrusion detector trained and benchmarked on the UNSW-NB15 dataset to identify malicious traffic patterns.",
-    tech: ["Python", "TensorFlow", "Scikit-learn"], href: "#", accent: "05"
+    tech: ["Python", "TensorFlow", "Scikit-learn"], href: "https://github.com/mhmdaman/intrusion_detection", accent: "05"
   },
   {
-    id: "p6", title: "Algorithm Visualizer", year: "2026", category: "Education",
-    description: "A sorting algorithm visualizer with a 'Doodle Jump' aesthetic and animated Heap Sort trees for intuitive learning.",
-    tech: ["HTML", "CSS", "Vanilla JS", "SVG"], href: "#", accent: "06"
+    id: "p6", title: "Summerize", year: "2026", category: "AI / Automation",
+    description: "An AI-powered YouTube video study notes generator. Paste any YouTube URL and get structured, exam-ready study notes — complete with key terms, examples, memory tricks, and practice questions.",
+    tech: ["Python", "Transcript", "AI", "Vannila HTML/CSS"], href: "https://github.com/mhmdaman/summerize", accent: "06"
   },
+
   {
     id: "p7", title: "Emotion Detection", year: "2026", category: "AI / Vision",
     description: "Real-time facial emotion detection system using webcam feed to identify and categorize human expressions.",
-    tech: ["Python", "OpenCV", "Haar Cascade"], href: "#", accent: "07"
+    tech: ["Python", "OpenCV", "Haar Cascade"], href: "https://github.com/mhmdaman/emotions", accent: "07"
   },
   {
     id: "p8", title: "Terminal RPG Games", year: "2026", category: "Gaming",
     description: "Text-based role-playing games playable entirely in the terminal, featuring immersive ASCII visuals and logic.",
-    tech: ["Python", "Curses", "ASCII Art"], href: "#", accent: "08"
+    tech: ["Python", "Curses", "ASCII Art"], href: "https://github.com/mhmdaman/RPG-", accent: "08"
   },
   {
     id: "p9", title: "Packet Sniffer", year: "2025", category: "Security Tool",
     description: "CLI utility designed to capture, dissect, and inspect live network packets for security analysis and troubleshooting.",
-    tech: ["Python", "Scapy"], href: "#", accent: "09"
+    tech: ["Python", "Scapy"], href: "https://github.com/mhmdaman/chickenwing", accent: "09"
   },
   {
     id: "p10", title: "Password Generator", year: "2025", category: "Utility",
     description: "A secure utility to generate strong, highly configurable passwords with custom entropy requirements.",
-    tech: ["Python"], href: "#", accent: "10"
+    tech: ["Python"], href: "https://github.com/mhmdaman/password-generator", accent: "10"
+  },
+  {
+    id: "p11", title: "Freely", year: "2026", category: "web application",
+    description: "Freely is a high-fidelity, tactile music streaming application built with React and the YouTube Iframe API.",
+    tech: ["React", "Vannila CSS", "JavaScript", "YouTube Iframe API"], href: "https://github.com/mhmdaman/freely", accent: "11"
   }
+
 ];
 
 
