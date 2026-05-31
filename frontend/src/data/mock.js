@@ -64,7 +64,7 @@ export const projects = [
   {
     id: "p4", title: "CaféCore", year: "2026", category: "Management System",
     description: "A streamlined canteen management system featuring custom theming, detailed ER diagrams, and robust operation logic.",
-    tech: ["Flask", "MySQL", "CSS"], href: "", accent: "04"
+    tech: ["Flask", "MySQL", "CSS"], href: "https://github.com/mhmdaman/canteen", accent: "04"
   },
   {
     id: "p5", title: "Intrusion Detection System (IDS)", year: "2026", category: "Security / ML",
