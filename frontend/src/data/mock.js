@@ -109,7 +109,7 @@ export const projects = [
 
 export const certifications = [
   { id: "c1", title: "Linguaskill English Proficiency", issuer: "Cambridge University", year: "2025", credentialId: "GCC-8842-XZ" },
-
+  {id:"c2", title:"NPTEL course on Algorithmic Graph theory and Data Structures" , issuer: "IIT-Kanpur", year: "2026" , credentialID:"NPTEL26CS08S554400060" },
 ];
 
 export const navLinks = [
