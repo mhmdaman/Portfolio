@@ -8,7 +8,7 @@ const Certifications = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="flex items-end justify-between mb-16 reveal">
           <div>
-            <div className="font-mono-alt text-xs text-neutral-500 uppercase tracking-[0.25em] mb-4">01 — Certification</div>
+            <div className="font-mono-alt text-xs text-neutral-500 uppercase tracking-[0.25em] mb-4">02 — Certification</div>
             <h2 className="font-display text-4xl md:text-6xl tracking-tight text-white max-w-3xl leading-[1.05]">
               Proof of the hours put in.
             </h2>
