@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { navLinks, profile } from "../data/mock";
+import WeatherSwitcher from "./WeatherSwitcher";
 
-const Header = () => {
+const Header = ({ weather, onWeatherChange }) => {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -46,6 +47,10 @@ const Header = () => {
               {l.label}
             </a>
           ))}
+
+          {/* Weather switcher — styled like a nav link */}
+          <span className={`w-px h-4 ${scrolled ? "bg-neutral-300" : "bg-neutral-700"}`} />
+          <WeatherSwitcher current={weather} onChange={onWeatherChange} scrolled={scrolled} />
         </nav>
 
         <a
@@ -74,6 +79,9 @@ const Header = () => {
             <a href="#contact" onClick={(e) => handleNav(e, "#contact")} className="mt-2 inline-flex justify-center px-4 py-2 bg-neutral-950 text-white text-sm">
               Let&apos;s talk
             </a>
+            <div className="pt-2 border-t border-neutral-200">
+              <WeatherSwitcher current={weather} onChange={onWeatherChange} scrolled={true} />
+            </div>
           </div>
         </div>
       )}

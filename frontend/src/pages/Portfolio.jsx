@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import About from "../components/About";
@@ -9,21 +9,18 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
 import CursorParticles from "../components/CursorParticles";
+import WeatherCanvas from "../components/WeatherCanvas";
 import Lenis from "lenis";
 
 const Portfolio = () => {
+  const [weather, setWeather] = useState("clear");
   useEffect(() => {
     // 1. Initialize Lenis for smooth scroll
     const lenis = new Lenis({
-      duration: 1.2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      orientation: "vertical",
-      gestureOrientation: "vertical",
+      lerp: 0.1, // Smoothness intensity (0.1 is standard for buttery smooth feel)
+      wheelMultiplier: 1.0,
       smoothWheel: true,
-      wheelMultiplier: 1,
       smoothTouch: false,
-      touchMultiplier: 2,
-      infinite: false,
     });
 
     function raf(time) {
@@ -56,12 +53,13 @@ const Portfolio = () => {
     <main className="relative min-h-screen bg-neutral-950 text-neutral-100 font-body overflow-x-hidden grain">
       {/* Background elements that persist on scroll */}
       <div className="fixed inset-0 pointer-events-none z-0">
+        <WeatherCanvas weather={weather} />
         <CursorParticles density={0.00006} />
         <div className="absolute inset-0 bg-gradient-to-b from-neutral-950/0 via-neutral-950/20 to-neutral-950/0" />
       </div>
 
       <div className="relative z-10">
-        <Header />
+        <Header weather={weather} onWeatherChange={setWeather} />
         <Hero />
         <About />
         <Skills />
