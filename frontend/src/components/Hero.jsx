@@ -29,7 +29,7 @@ const Hero = () => {
         <div className="flex items-center justify-between text-xs font-mono-alt text-neutral-400 mb-10">
           <div className="flex items-center gap-2">
             <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full animate-pulse" />
-            {/*<span>Intern at mybuilspace.com</span>*/}
+            <span>Intern at mybuilspace.com</span>
           </div>
           <div className="hidden sm:block">{profile.location} — GMT+5:30</div>
         </div>
