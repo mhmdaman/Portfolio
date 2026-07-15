@@ -10,7 +10,7 @@ const Contact = () => {
           <div>
             <div className="font-mono-alt text-xs text-neutral-500 uppercase tracking-[0.25em] mb-4">05 — Contact</div>
             <h2 className="font-display text-4xl md:text-7xl tracking-tight text-white max-w-4xl leading-[1.02]">
-              Got an idea? <br className="hidden md:block" />
+              Got an idea <br className="hidden md:block" />
               <span className="text-neutral-600">Let&apos;s ship it.</span>
             </h2>
           </div>
